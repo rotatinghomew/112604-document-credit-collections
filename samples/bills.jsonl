@@ -1,0 +1,3 @@
+{"bill": "BL-1", "revision": 1, "original_group": "O-14", "holder": "FWD-1", "voyage": "VO-7", "shipped": "2026-11-30", "vehicles": [{"vin": "V901", "model": "M1"}]}
+{"bill": "BL-1", "revision": 2, "original_group": "O-14", "holder": "BANK-1", "voyage": "VO-7", "shipped": "2026-11-30", "vehicles": [{"vin": "V901", "model": "M1"}, {"vin": "V902", "model": "M1"}]}
+{"bill": "BL-2", "revision": 1, "original_group": "O-15", "holder": "FWD-1", "voyage": "VO-8", "shipped": "2026-12-04", "vehicles": [{"vin": "V903", "model": "M2"}]}

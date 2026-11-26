@@ -1,0 +1,3 @@
+{"credit": "LC-19", "revision": 1, "currency": "USD", "limit_minor": 50000000, "partial": true, "latest_ship": "2026-12-02", "latest_present": "2026-12-09", "models": ["M1"], "buyer_ok": true, "seller_ok": true, "bank_effective": "B-01"}
+{"credit": "LC-19", "revision": 2, "currency": "USD", "limit_minor": 52000000, "partial": true, "latest_ship": "2026-12-05", "latest_present": "2026-12-12", "models": ["M1", "M2"], "buyer_ok": true, "seller_ok": true, "bank_effective": ""}
+{"credit": "LC-19", "revision": 3, "currency": "USD", "limit_minor": 52000000, "partial": true, "latest_ship": "2026-12-05", "latest_present": "2026-12-12", "models": ["M1", "M2"], "buyer_ok": true, "seller_ok": true, "bank_effective": "B-03"}

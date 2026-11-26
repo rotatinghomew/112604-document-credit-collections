@@ -1,0 +1,6 @@
+{"message": "B1", "presentation": "PR-1", "credit": "LC-19", "revision": 1, "event": "received", "minor": 28000000, "fee_minor": 0, "original_group": "O-14", "discrepancies": []}
+{"message": "B2", "presentation": "PR-1", "credit": "LC-19", "revision": 1, "event": "discrepancy", "minor": 0, "fee_minor": 0, "original_group": "O-14", "discrepancies": ["plate-transcription", "invoice-piece"]}
+{"message": "B3", "presentation": "PR-1", "credit": "LC-19", "revision": 1, "event": "waiver", "minor": 0, "fee_minor": 0, "original_group": "O-14", "discrepancies": ["plate-transcription"]}
+{"message": "B4", "presentation": "PR-1", "credit": "LC-19", "revision": 1, "event": "paid", "minor": 17000000, "fee_minor": 22500, "original_group": "O-14", "discrepancies": []}
+{"message": "B5", "presentation": "PR-1", "credit": "LC-19", "revision": 1, "event": "amount_released", "minor": 11000000, "fee_minor": 0, "original_group": "O-14", "discrepancies": []}
+{"message": "B6", "presentation": "PR-1", "credit": "LC-19", "revision": 1, "event": "originals_returned", "minor": 0, "fee_minor": 0, "original_group": "O-14", "discrepancies": []}

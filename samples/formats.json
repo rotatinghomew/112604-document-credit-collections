@@ -1,0 +1,106 @@
+{
+  "feeds": {
+    "credits": {
+      "key": [
+        "credit",
+        "revision"
+      ],
+      "fields": {
+        "credit": "string",
+        "revision": "int",
+        "currency": "string",
+        "limit_minor": "int",
+        "partial": "bool",
+        "latest_ship": "date",
+        "latest_present": "date",
+        "models": "list",
+        "buyer_ok": "bool",
+        "seller_ok": "bool",
+        "bank_effective": "string"
+      },
+      "note": "金额为币种最小单位。bank_effective 为空时无开证行生效通知。日期按营业地自然日，边界当天可用。 演练的 bank_effective 值是开证行可核验的通知编号；生效通知作为独立消息送达。"
+    },
+    "bills": {
+      "key": [
+        "bill",
+        "revision"
+      ],
+      "fields": {
+        "bill": "string",
+        "revision": "int",
+        "original_group": "string",
+        "holder": "string",
+        "voyage": "string",
+        "shipped": "date",
+        "vehicles": "list"
+      },
+      "note": "vehicles 内每件含 vin 和 model。补印仍沿用原正本组，更正签发版有新 revision。"
+    },
+    "bank_messages": {
+      "key": [
+        "message"
+      ],
+      "fields": {
+        "message": "string",
+        "presentation": "string",
+        "credit": "string",
+        "revision": "int",
+        "event": "string",
+        "minor": "int",
+        "fee_minor": "int",
+        "original_group": "string",
+        "discrepancies": "list"
+      },
+      "note": "event 为 received、discrepancy、waiver、paid、amount_released 或 originals_returned。minor 表示本条涉及的票面金额，fee_minor 为银行费。waiver 只覆盖所列 discrepancies。"
+    },
+    "bilateral_permissions": {
+      "key": [
+        "approval"
+      ],
+      "fields": {
+        "approval": "string",
+        "group": "string",
+        "holder": "string",
+        "presenter": "string",
+        "at": "time"
+      },
+      "note": "持有人单次提交同一正本组的授权资料。"
+    }
+  },
+  "references": [
+    [
+      "bank_messages",
+      [
+        "credit",
+        "revision"
+      ],
+      "credits",
+      [
+        "credit",
+        "revision"
+      ]
+    ],
+    [
+      "bank_messages",
+      [
+        "original_group"
+      ],
+      "bills",
+      [
+        "original_group"
+      ]
+    ],
+    [
+      "bilateral_permissions",
+      [
+        "group",
+        "holder"
+      ],
+      "bills",
+      [
+        "original_group",
+        "holder"
+      ]
+    ]
+  ]
+}
